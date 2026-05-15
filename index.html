@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Hub</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text: #f8fafc;
+            --accent: #38bdf8;
+            --secondary: #94a3b8;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 { color: var(--accent); margin-bottom: 10px; }
+        h2 { border-bottom: 2px solid var(--card-bg); padding-bottom: 10px; color: var(--accent); }
+
+        .section {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .badge {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--bg);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        a { color: var(--accent); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+
+        ul { list-style: none; padding: 0; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Digital Hub</h1>
+        <p>Gaming • Stream • Logistics</p>
+    </header>
+
+    <!-- Socials & Gaming Info -->
+    <section class="section">
+        <h2>Connect</h2>
+        <div class="grid">
+            <div class="item">
+                <strong>Streaming</strong><br>
+                <a href="#">Twitch / YouTube Link</a>
+            </div>
+            <div class="item">
+                <strong>Discord</strong><br>
+                Username#0000
+            </div>
+            <div class="item">
+                <strong>Gaming IDs</strong><br>
+                Steam: ID_HERE<br>
+                Epic: ID_HERE
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section class="section">
+        <h2>Interests & Pursuits</h2>
+        <ul class="grid">
+            <li class="item">Hardware Tinkering</li>
+            <li class="item">Botanical Projects</li>
+            <li class="item">Ancient History</li>
+            <li class="item">RF Networking</li>
+        </ul>
+    </section>
+
+    <!-- Inventory / Marketplace -->
+    <section class="section">
+        <h2>Crafted for Sale</h2>
+        <div class="grid">
+            <div class="item">
+                <span class="badge">Handmade</span>
+                <strong>Custom Antenna Arrays</strong>
+                <p>Tuned for specific frequencies. Contact for specs.</p>
+            </div>
+            <div class="item">
+                <span class="badge">Small Batch</span>
+                <strong>Botanical Elixirs</strong>
+                <p>Seasonal infusions and extracts.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2>Resale Items</h2>
+        <div class="grid">
+            <div class="item">
+                <strong>Network Hardware</strong>
+                <p>Gently used nodes and components.</p>
+            </div>
+            <div class="item">
+                <strong>Tech Clearance</strong>
+                <p>Miscellaneous computing and radio gear.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+</body>
+</html>
